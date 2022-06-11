@@ -1,0 +1,25 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "People API",
+    "description": "People",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https"
+    }
+  ],
+  "paths": {
+    "/v1/people": {
+      "get": {
+        "operationId": "getPeople",
+        "responses": {
+          "200": {
+            "$ref": "https://raw.githubusercontent.com/alexec/schemas/main/person.schema.json"
+          }
+        }
+      }
+    }
+  }
+}
