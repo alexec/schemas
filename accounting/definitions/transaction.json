@@ -1,0 +1,9 @@
+{
+  "$id": "https://developer.intuit.com/accounting/transaction",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Transaction",
+  "type": "object",
+  "properties": {
+    "amount": "number"
+  }
+}

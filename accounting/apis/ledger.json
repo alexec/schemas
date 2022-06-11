@@ -1,0 +1,37 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "People API",
+    "description": "People",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https"
+    }
+  ],
+  "paths": {
+    "/v1/transactions/{id}": {
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "get": {
+        "operationId": "getPerson",
+        "responses": {
+          "200": {
+            "$ref": "../definitions/transaction.json"
+          },
+          "404": {
+            "$ref": "../../core/definitions/errorResponse.json"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "$id": "https://raw.githubusercontent.com/alexec/schemas/main/errorResponse.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Error response",
+  "type": "object",
+  "properties": {
+    "errors": {
+      "type": "array",
+      "item": {
+        "$ref": "./error.json"
+      }
+    }
+  }
+}
